@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+</div>
+<div id="control">
+    <button class="button-36" onclick="increment_number_of_items()">Load more...</button>
+</div>
+
+<div class="modal" id="myModal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal_image_container">
+            <img alt="" id="modal_image" src=""/>
+        </div>
+        <div id="modal_card_container">
+            <div id="modal_header" class="header">
+                <div class="pictureContainer"><img alt="" class="profilePicture" id="modal_profile_pic" src=""/></div>
+                <div class="nameDateContainer"><h3 class="name" id="modal_name"></h3><h6 class="date"
+                                                                                         id="modal_date"></h6></div>
+                <div class="logoContainer"><img alt="" class="logo" id="modal_logo" src=""/></div>
+            </div>
+            <div id="modal_body" class="body">
+                <div class="captionContainer">
+                    <div class="caption" id="modal_caption"></div>
+                </div>
+            </div>
+            <div id="modal_footer" class="footer">
+                <div class="likesContainer"><img alt="" class="likesImage" id="modal_like_img"
+                                                 src=""/>
+                    <p class="likesNumber" id="modal_likes_number"></p></div>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

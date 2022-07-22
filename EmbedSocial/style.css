@@ -1,0 +1,301 @@
+/* For mobile phones: */
+[class*="card"] {
+    width: 100%;
+    padding: 3px;
+}
+[id*="container"] {
+    margin: 20px;
+}
+[class*="modal-content"] {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    height: auto;
+    width: 85%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .card {width: 45%;padding: 3px}
+    .modal-content{
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        height: auto;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .card {width: 23%;padding: 3px}
+    .modal-content{
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        height: 80%;
+    }
+    #modal_image_container{
+        float: left;
+        width: 64%;
+        height: 100%;
+        margin: 0;
+    }
+    #modal_card_container{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #modal_image{
+        height: 100%;
+    }
+    #modal_footer{
+        display: inline-block;
+        width: 100%;
+    }
+    #modal_body{
+        height: auto;
+    }
+}
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    /*background-color: #fefefe;*/
+    /*margin: auto;*/
+    /*padding: 20px;*/
+    /*border: 1px solid #888;*/
+    /*width: 70%;*/
+}
+#modal_caption{
+    margin: 0;
+    padding: 0;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer{
+    text-align: left;
+}
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+    /*width: 23%;*/
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid lightgrey;
+
+}
+
+.header, .body, .footer {
+    display: block;
+    width: 100%;
+}
+
+.header {
+    height: 65px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#container {
+    text-align: center;
+}
+
+.header {
+    text-align: justify;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.pictureContainer {
+    width: 50px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.nameDateContainer {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.date {
+    padding-top: 3px;
+    font-weight: normal;
+}
+
+.name {
+    font-size: 17px;
+    font: message-box;
+    font-weight: bold;
+}
+
+.logo {
+    border-radius: 30%;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.logoContainer {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding: 10px 0;
+}
+
+.name {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.date {
+    margin: 0;
+    vertical-align: top;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+}
+
+.captionContainer {
+    padding: 0 15px 15px 15px;
+}
+
+.caption {
+    text-align: justify;
+}
+
+.mainPictureContainer {
+    display: inline-block;
+    padding: 15px;
+}
+
+.mainPicture {
+    width: 100%;
+    height: 300px;
+}
+
+.likesContainer {
+    width: 90%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid lightgray;
+
+}
+
+.likesNumber, .likesImage {
+    display: inline-block;
+}
+
+.likesNumber {
+    padding-left: 2px;
+    margin: 0;
+    vertical-align: top;
+}
+
+#modal_caption {
+    margin-top: 10px;
+    width: 288px;
+}
+
+#modal_image {
+    width: 100%;
+}
+
+.liked {
+    content:url("https://flyclipart.com/thumb2/coeur-instagram-png-png-image-884394.png");
+    width: 30px;
+    height: 22px;
+}
+
+#control {
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+button{
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-36:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
+}
+#modal_header, #modal_footer, #modal_body{
+    width: 100%;
+}
+#modal_caption{
+    display: inline-block;
+    width: 100%;
+}
